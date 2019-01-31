@@ -7,4 +7,7 @@ import com.test.shoppingcart.models.Product;
 
 @Repository
 public interface ProductRepository extends JpaRepository<Product, Long> {
+
+	Product findOneByName(String productName);
+
 }
